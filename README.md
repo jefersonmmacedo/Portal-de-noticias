@@ -5,7 +5,7 @@ Portal de notícias desenvolvido em Node Js
 ```
 npm init
 ```
-- Segundo comando a ser digitado para dar seguimento no projeto.
+- Segundo comando a sera o express com o atributo -save, trazendo todas as dependencias do projeto.
 ```
 npm install express -save
 ```
