@@ -2,4 +2,7 @@
 Portal de notícias desenvolvido em Node Js
 
 - Primeiro comando a ser digitado para iniciar o projeto
+```
+mvn test
+```
 =npm init
