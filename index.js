@@ -1,15 +1,23 @@
-const http = require('http');
+const app = require("./server/app");
 
-const server = http.createServer( function ( req, res){
-let categoria = req.url;
 
-if (categoria == '/tecnologia'){
-    res.end("<html><body>Noticias de tecnologia</body></html>");
-} else if ( categoria == '/moda') {
-    res.end("<html><body>Noticias de moda</body></html>")
-} else if ( categoria == '/beleza') {
-    res.end("<html><body>Noticias de beleza</body></html>")
-} else {
-res.end("<html><body>Noticias Atualizadas sempre</body></html>")
-}
-}).listen(3000)
+
+app.get('/', (req, res) => {
+    res.render("home/index")
+});
+
+app.get('/formulario_inclusao_noticia', (req, res) => {
+    res.render("admin/form_add_noticia")
+});
+
+app.get('/noticias', (req, res) => {
+    res.render("noticias/noticias")
+});
+
+app.get('/noticia', (req, res) => {
+    res.render("noticias/noticia")
+});
+
+app.listen(3000, function(){
+    console.log('Servidor Ativo');
+})
