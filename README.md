@@ -13,3 +13,8 @@ npm install express --save
 ```
 npm install ejs --save
 ```
+- Para o banco de dados estou utilizando o comando:
+```
+npm install mysql@2.13.0 --save
+```
+
