@@ -17,4 +17,7 @@ npm install ejs --save
 ```
 npm install mysql@2.13.0 --save
 ```
-
+- Consign é sugerida para facilitar o gerenciamento das rotas no express:
+```
+npm install consign@0.1.6 --save
+```
